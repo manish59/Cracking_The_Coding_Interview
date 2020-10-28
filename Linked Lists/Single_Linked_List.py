@@ -51,6 +51,8 @@ class Single_Linked_List:
             print(temp.get_data())
             temp=temp.get_next()
     def append(self,node):
+        # if type(node)!=Node:
+        #     node=Node(node)
         temp=self.head
         if self.head==None:
             self.head=node
